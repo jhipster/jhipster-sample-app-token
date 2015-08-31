@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jhipsterApp')
+angular.module('sampletokenApp')
     .config(function ($stateProvider) {
         $stateProvider
             .state('audits', {

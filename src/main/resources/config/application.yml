@@ -21,7 +21,7 @@ mail:
     protocol: smtp
     tls: false
     auth: false
-    from: jhipster@localhost
+    from: sampleToken@localhost
 
 authentication:
     xauth:
@@ -30,8 +30,8 @@ authentication:
         tokenValidityInSeconds: 1800
 
 swagger:
-    title: jhipster API
-    description: jhipster applications and beyond!
+    title: sampleToken API
+    description: sampleToken applications and beyond!
     version: 0.0.1
     termsOfServiceUrl: http://jhipster.github.io/
     contact:
