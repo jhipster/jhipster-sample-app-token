@@ -1,4 +1,4 @@
-# Developping sampleToken
+# Developing sampleToken
 
 sampleToken was generated using JHipster, you can find documentation and help at [JHipster][].
 
