@@ -29,6 +29,11 @@ authentication:
         # Token is valid 30 minutes
         tokenValidityInSeconds: 1800
 
+spring:
+    mvc:
+        favicon:
+            enabled: false
+
 swagger:
     title: sampleToken API
     description: sampleToken applications and beyond!

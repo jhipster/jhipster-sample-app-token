@@ -7,7 +7,7 @@ angular.module('sampletokenApp')
                 parent: 'account',
                 url: '/reset/request',
                 data: {
-                    roles: []
+                    authorities: []
                 },
                 views: {
                     'content@': {

@@ -7,7 +7,7 @@ angular.module('sampletokenApp')
                 parent: 'site',
                 url: '/',
                 data: {
-                    roles: []
+                    authorities: []
                 },
                 views: {
                     'content@': {
