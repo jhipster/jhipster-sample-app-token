@@ -9,6 +9,6 @@ angular.module('sampletokenApp')
                     AlertService.success(alertKey, { param : response.headers('X-sampletokenApp-params')});
                 }
                 return response;
-            },
+            }
         };
     });
