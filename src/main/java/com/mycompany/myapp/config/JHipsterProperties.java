@@ -290,8 +290,14 @@ public class JHipsterProperties {
 
         private final Rememberme rememberme = new Rememberme();
 
+        private final Xauth xauth = new Xauth();
+
         public Rememberme getRememberme() {
             return rememberme;
+        }
+
+        public Xauth getXauth() {
+            return xauth;
         }
 
         public static class Rememberme {
@@ -305,6 +311,29 @@ public class JHipsterProperties {
 
             public void setKey(String key) {
                 this.key = key;
+            }
+        }
+
+        public static class Xauth {
+
+            private String secret;
+
+            private int tokenValidityInSeconds = 1800;
+
+            public String getSecret() {
+                return secret;
+            }
+
+            public void setSecret(String secret) {
+                this.secret = secret;
+            }
+
+            public int getTokenValidityInSeconds() {
+                return tokenValidityInSeconds;
+            }
+
+            public void setTokenValidityInSeconds(int tokenValidityInSeconds) {
+                this.tokenValidityInSeconds = tokenValidityInSeconds;
             }
         }
     }
