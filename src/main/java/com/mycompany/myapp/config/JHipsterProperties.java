@@ -290,16 +290,47 @@ public class JHipsterProperties {
 
         private final Rememberme rememberme = new Rememberme();
 
-        private final Xauth xauth = new Xauth();
+        private final Authentication authentication = new Authentication();
 
         public Rememberme getRememberme() {
             return rememberme;
         }
 
-        public Xauth getXauth() {
-            return xauth;
+        public Authentication getAuthentication() {
+            return authentication;
         }
 
+        public static class Authentication {
+
+            private final Xauth xauth = new Xauth();
+
+            public Xauth getXauth() {
+                return xauth;
+            }
+
+            public static class Xauth {
+
+                private String secret;
+
+                private int tokenValidityInSeconds = 1800;
+
+                public String getSecret() {
+                    return secret;
+                }
+
+                public void setSecret(String secret) {
+                    this.secret = secret;
+                }
+
+                public int getTokenValidityInSeconds() {
+                    return tokenValidityInSeconds;
+                }
+
+                public void setTokenValidityInSeconds(int tokenValidityInSeconds) {
+                    this.tokenValidityInSeconds = tokenValidityInSeconds;
+                }
+            }
+        }
         public static class Rememberme {
 
             @NotNull
@@ -311,29 +342,6 @@ public class JHipsterProperties {
 
             public void setKey(String key) {
                 this.key = key;
-            }
-        }
-
-        public static class Xauth {
-
-            private String secret;
-
-            private int tokenValidityInSeconds = 1800;
-
-            public String getSecret() {
-                return secret;
-            }
-
-            public void setSecret(String secret) {
-                this.secret = secret;
-            }
-
-            public int getTokenValidityInSeconds() {
-                return tokenValidityInSeconds;
-            }
-
-            public void setTokenValidityInSeconds(int tokenValidityInSeconds) {
-                this.tokenValidityInSeconds = tokenValidityInSeconds;
             }
         }
     }
