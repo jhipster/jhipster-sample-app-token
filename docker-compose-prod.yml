@@ -1,6 +1,6 @@
 jhipster-prod-mysql:
   container_name: sampleToken-prod-mysql
-  image : mysql
+  image: mysql
   # volumes:
   # - ~/volumes/jhipster/sampleToken/prod-mysql/:/var/lib/mysql/
   environment:
