@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampletokenApp')
+angular.module('sampleTokenApp')
     .factory('ConfigurationService', function ($rootScope, $filter, $http) {
         return {
             get: function() {

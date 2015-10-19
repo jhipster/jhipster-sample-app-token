@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampletokenApp')
+angular.module('sampleTokenApp')
     .factory('AuthServerProvider', function loginService($http, localStorageService, Base64) {
         return {
             login: function(credentials) {

@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.mycompany.myapp</groupId>
-    <artifactId>sampletoken</artifactId>
+    <artifactId>sample-token</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>sampleToken</name>

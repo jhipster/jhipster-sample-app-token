@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampletokenApp')
+angular.module('sampleTokenApp')
     .factory('Principal', function Principal($q, Account) {
         var _identity,
             _authenticated = false;

@@ -1,8 +1,8 @@
 /* globals $ */
 'use strict';
 
-angular.module('sampletokenApp')
-    .directive('sampletokenAppPager', function() {
+angular.module('sampleTokenApp')
+    .directive('sampleTokenAppPager', function() {
         return {
             templateUrl: 'scripts/components/form/pager.html'
         };

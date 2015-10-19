@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampletokenApp')
+angular.module('sampleTokenApp')
     .factory('MonitoringService', function ($rootScope, $http) {
         return {
             getMetrics: function () {

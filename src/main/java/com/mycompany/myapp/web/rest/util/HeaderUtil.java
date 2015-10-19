@@ -10,20 +10,20 @@ public class HeaderUtil {
 
     public static HttpHeaders createAlert(String message, String param) {
         HttpHeaders headers = new HttpHeaders();
-        headers.add("X-sampletokenApp-alert", message);
-        headers.add("X-sampletokenApp-params", param);
+        headers.add("X-sampleTokenApp-alert", message);
+        headers.add("X-sampleTokenApp-params", param);
         return headers;
     }
 
     public static HttpHeaders createEntityCreationAlert(String entityName, String param) {
-        return createAlert("sampletokenApp." + entityName + ".created", param);
+        return createAlert("sampleTokenApp." + entityName + ".created", param);
     }
 
     public static HttpHeaders createEntityUpdateAlert(String entityName, String param) {
-        return createAlert("sampletokenApp." + entityName + ".updated", param);
+        return createAlert("sampleTokenApp." + entityName + ".updated", param);
     }
 
     public static HttpHeaders createEntityDeletionAlert(String entityName, String param) {
-        return createAlert("sampletokenApp." + entityName + ".deleted", param);
+        return createAlert("sampleTokenApp." + entityName + ".deleted", param);
     }
 }
