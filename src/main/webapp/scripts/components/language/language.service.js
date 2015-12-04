@@ -28,10 +28,6 @@ angular.module('sampleTokenApp')
  */
     .constant('LANGUAGES', [
         'en', 'fr'
-        //JHipster will add new languages here
+        // jhipster-needle-006 - JHipster will add new languages here
     ]
 );
-
-
-
-
