@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleTokenApp').controller('UserManagementDialogController',
+angular.module('sampletokenApp').controller('UserManagementDialogController',
     ['$scope', '$stateParams', '$uibModalInstance', 'entity', 'User', 'Language',
         function($scope, $stateParams, $uibModalInstance, entity, User, Language) {
 

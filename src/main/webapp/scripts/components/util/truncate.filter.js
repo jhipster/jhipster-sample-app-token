@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleTokenApp')
+angular.module('sampletokenApp')
     .filter('characters', function () {
         return function (input, chars, breakOnWord) {
             if (isNaN(chars)) {

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleTokenApp')
+angular.module('sampletokenApp')
     .controller('NavbarController', function ($scope, $location, $state, Auth, Principal, ENV) {
         $scope.isAuthenticated = Principal.isAuthenticated;
         $scope.$state = $state;

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleTokenApp')
+angular.module('sampletokenApp')
     .config(function (uibPagerConfig) {
         uibPagerConfig.itemsPerPage = 20;
         uibPagerConfig.previousText = '«';

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleTokenApp')
+angular.module('sampletokenApp')
     .directive('jhSort', function () {
         return {
             restrict: 'A',

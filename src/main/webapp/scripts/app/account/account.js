@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleTokenApp')
+angular.module('sampletokenApp')
     .config(function ($stateProvider) {
         $stateProvider
             .state('account', {

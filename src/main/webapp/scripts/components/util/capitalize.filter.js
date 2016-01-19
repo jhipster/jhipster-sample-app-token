@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleTokenApp')
+angular.module('sampletokenApp')
     .filter('capitalize', function () {
         return function (input, scope) {
             if (input != null)

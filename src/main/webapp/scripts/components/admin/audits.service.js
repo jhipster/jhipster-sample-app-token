@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sampleTokenApp')
+angular.module('sampletokenApp')
     .factory('AuditsService', function ($http) {
         return {
             findAll: function () {

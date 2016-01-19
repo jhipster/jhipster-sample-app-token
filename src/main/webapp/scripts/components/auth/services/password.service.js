@@ -1,18 +1,18 @@
 'use strict';
 
-angular.module('sampleTokenApp')
+angular.module('sampletokenApp')
     .factory('Password', function ($resource) {
         return $resource('api/account/change_password', {}, {
         });
     });
 
-angular.module('sampleTokenApp')
+angular.module('sampletokenApp')
     .factory('PasswordResetInit', function ($resource) {
         return $resource('api/account/reset_password/init', {}, {
         })
     });
 
-angular.module('sampleTokenApp')
+angular.module('sampletokenApp')
     .factory('PasswordResetFinish', function ($resource) {
         return $resource('api/account/reset_password/finish', {}, {
         })
