@@ -1,0 +1,15 @@
+version: '2'
+services:
+    sampletoken-app:
+        image: sampletoken
+        external_links:
+            - sampletoken-mysql:mysql
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/sampletoken?useUnicode=true&characterEncoding=utf8&useSSL=false
+        ports:
+            - 8080:8080
+    sampletoken-mysql:
+        extends:
+            file: mysql.yml
+            service: sampletoken-mysql

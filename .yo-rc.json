@@ -3,7 +3,7 @@
     "baseName": "sampleToken",
     "packageName": "com.mycompany.myapp",
     "packageFolder": "com/mycompany/myapp",
-    "authenticationType": "xauth",
+    "authenticationType": "jwt",
     "hibernateCache": "ehcache",
     "clusteredHttpSession": "no",
     "websocket": "no",
@@ -13,14 +13,20 @@
     "searchEngine": "no",
     "useCompass": false,
     "buildTool": "maven",
-    "frontendBuilder": "grunt",
-    "javaVersion": "8",
     "enableTranslation": true,
-    "rememberMeKey": "08e79113a8487c3ad6f255a457525caea08f02f0",
-    "useSass": false,
+    "applicationType": "monolith",
     "testFrameworks": [
-      "gatling"
+      "gatling",
+      "protractor"
     ],
-    "enableSocialSignIn": false
+    "languages": [
+      "en"
+    ],
+    "serverPort": 8080,
+    "jhipsterVersion": "3.1.0",
+    "enableSocialSignIn": false,
+    "jwtSecretKey": "042e7d536354d3cdfab490925c55022efcb42bae",
+    "useSass": false,
+    "jhiPrefix": "jhi"
   }
 }

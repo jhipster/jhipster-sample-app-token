@@ -11,8 +11,9 @@
 # ===================================================================
 
 spring:
+    application:
+        name: sampleToken
     datasource:
-        driver-class-name: org.h2.jdbcx.JdbcDataSource
         url: jdbc:h2:mem:sampleToken;DB_CLOSE_DELAY=-1
         name:
         username:
@@ -60,13 +61,10 @@ jhipster:
         queueCapacity: 10000
     security:
         authentication:
-            xauth:
-                secret: myXAuthSecret
+            jwt:
+                secret: jwt-secret-key
                 # Token is valid 30 minutes
                 tokenValidityInSeconds: 1800
-        rememberme:
-            # security key (this key should be unique for your application, and kept secret)
-            key: 08e79113a8487c3ad6f255a457525caea08f02f0
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx.enabled: true
     swagger:
@@ -74,6 +72,9 @@ jhipster:
         description: sampleToken API documentation
         version: 0.0.1
         termsOfServiceUrl:
-        contact:
+        contactName:
+        contactUrl:
+        contactEmail:
         license:
         licenseUrl:
+        enabled: false
