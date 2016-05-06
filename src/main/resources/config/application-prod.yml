@@ -53,6 +53,7 @@ server:
     compression:
         enabled: true
         mime-types: text/html,text/xml,text/plain,text/css, application/javascript, application/json
+        min-response-size: 1024
 
 # ===================================================================
 # JHipster specific properties
@@ -66,6 +67,12 @@ jhipster:
         timeToLiveSeconds: 3600
         ehcache:
             maxBytesLocalHeap: 256M
+    security:
+        authentication:
+            jwt:
+                secret: 042e7d536354d3cdfab490925c55022efcb42bae
+                # Token is valid 24 hours
+                tokenValidityInSeconds: 86400
     mail: # specific JHipster mail property, for standard properties see MailProperties
         from: sampleToken@localhost
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
@@ -79,7 +86,7 @@ jhipster:
             host: localhost
             port: 2003
             prefix: sampleToken
-        logs: # report metrics in the logs
+        logs: # Reports Dropwizard metrics in the logs
             enabled: false
             reportFrequency: 60 # in seconds
     logging:
