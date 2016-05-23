@@ -1,15 +1,15 @@
 version: '2'
 services:
-    sampletoken-app:
-        image: sampletoken
+    jhipsterjwtsampleapplication-app:
+        image: jhipsterjwtsampleapplication
         external_links:
-            - sampletoken-mysql:mysql
+            - jhipsterjwtsampleapplication-mysql:mysql
         environment:
             - SPRING_PROFILES_ACTIVE=prod
-            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/sampletoken?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/jhipsterjwtsampleapplication?useUnicode=true&characterEncoding=utf8&useSSL=false
         ports:
             - 8080:8080
-    sampletoken-mysql:
+    jhipsterjwtsampleapplication-mysql:
         extends:
             file: mysql.yml
-            service: sampletoken-mysql
+            service: jhipsterjwtsampleapplication-mysql

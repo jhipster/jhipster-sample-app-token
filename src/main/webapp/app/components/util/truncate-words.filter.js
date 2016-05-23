@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('sampleTokenApp')
+        .module('jhipsterJwtSampleApplicationApp')
         .filter('words', words);
 
     function words() {

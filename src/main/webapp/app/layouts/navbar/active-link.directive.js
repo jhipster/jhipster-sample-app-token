@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('sampleTokenApp')
+        .module('jhipsterJwtSampleApplicationApp')
         .directive('activeLink', activeLink);
 
     function activeLink() {

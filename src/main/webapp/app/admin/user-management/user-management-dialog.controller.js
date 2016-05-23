@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('sampleTokenApp')
+        .module('jhipsterJwtSampleApplicationApp')
         .controller('UserManagementDialogController',UserManagementDialogController);
 
     UserManagementDialogController.$inject = ['$stateParams', '$uibModalInstance', 'entity', 'User', 'JhiLanguageService'];

@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('sampleTokenApp')
+        .module('jhipsterJwtSampleApplicationApp')
         .factory('PaginationUtil', PaginationUtil);
 
     function PaginationUtil () {

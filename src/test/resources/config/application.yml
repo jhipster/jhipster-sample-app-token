@@ -12,14 +12,14 @@
 
 spring:
     application:
-        name: sampleToken
+        name: jhipsterJwtSampleApplication
     datasource:
-        url: jdbc:h2:mem:sampleToken;DB_CLOSE_DELAY=-1
+        url: jdbc:h2:mem:jhipsterJwtSampleApplication;DB_CLOSE_DELAY=-1
         name:
         username:
         password:
     jpa:
-        database-platform: com.mycompany.myapp.domain.util.FixedH2Dialect
+        database-platform: io.github.jhipster.sample.domain.util.FixedH2Dialect
         database: H2
         open-in-view: false
         show_sql: true
@@ -68,8 +68,8 @@ jhipster:
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx.enabled: true
     swagger:
-        title: sampleToken API
-        description: sampleToken API documentation
+        title: jhipsterJwtSampleApplication API
+        description: jhipsterJwtSampleApplication API documentation
         version: 0.0.1
         termsOfServiceUrl:
         contactName:

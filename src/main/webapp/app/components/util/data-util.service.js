@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('sampleTokenApp')
+        .module('jhipsterJwtSampleApplicationApp')
         .factory('DataUtils', DataUtils);
 
     DataUtils.$inject = ['$window'];

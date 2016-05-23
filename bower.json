@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "name": "sample-token",
+  "name": "jhipster-jwt-sample-application",
   "appPath": "src/main/webapp/",
   "testPath": "src/test/javascript/spec",
   "dependencies": {

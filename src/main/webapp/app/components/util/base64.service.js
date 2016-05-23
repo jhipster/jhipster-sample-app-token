@@ -3,7 +3,7 @@
     'use strict';
 
     angular
-        .module('sampleTokenApp')
+        .module('jhipsterJwtSampleApplicationApp')
         .factory('Base64', Base64);
 
     function Base64 () {

@@ -1,8 +1,8 @@
 version: '2'
 services:
-    sampletoken-sonar:
-        container_name: sampletoken-sonar
-        image: sonarqube:5.3
+    jhipsterjwtsampleapplication-sonar:
+        container_name: jhipsterjwtsampleapplication-sonar
+        image: sonarqube:5.5-alpine
         ports:
             - 9000:9000
             - 9092:9092

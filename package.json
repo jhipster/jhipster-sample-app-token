@@ -1,7 +1,7 @@
 {
-  "name": "sample-token",
+  "name": "jhipster-jwt-sample-application",
   "version": "0.0.0",
-  "description": "Description for sampleToken",
+  "description": "Description for jhipsterJwtSampleApplication",
   "private": true,
   "cacheDirectories": [
     "node_modules",

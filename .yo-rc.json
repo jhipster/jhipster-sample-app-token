@@ -1,8 +1,8 @@
 {
   "generator-jhipster": {
-    "baseName": "sampleToken",
-    "packageName": "com.mycompany.myapp",
-    "packageFolder": "com/mycompany/myapp",
+    "baseName": "jhipsterJwtSampleApplication",
+    "packageName": "io.github.jhipster.sample",
+    "packageFolder": "io/github/jhipster/sample",
     "authenticationType": "jwt",
     "hibernateCache": "ehcache",
     "clusteredHttpSession": "no",
