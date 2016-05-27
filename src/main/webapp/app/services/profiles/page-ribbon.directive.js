@@ -5,6 +5,8 @@
         .module('jhipsterJwtSampleApplicationApp')
         .directive('pageRibbon', pageRibbon);
 
+    pageRibbon.$inject = ['ProfileService', '$rootScope', '$translate'];
+
     function pageRibbon(ProfileService, $rootScope, $translate) {
         var directive = {
             replace : true,

@@ -5,6 +5,8 @@
         .module('jhipsterJwtSampleApplicationApp')
         .directive('hasAuthority', hasAuthority);
 
+    hasAuthority.$inject = ['Principal'];
+
     function hasAuthority(Principal) {
         var directive = {
             restrict: 'A',
