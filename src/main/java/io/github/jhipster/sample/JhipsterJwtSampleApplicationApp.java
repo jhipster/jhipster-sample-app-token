@@ -72,5 +72,4 @@ public class JhipsterJwtSampleApplicationApp {
             env.getProperty("server.port"));
 
     }
-
 }
