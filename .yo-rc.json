@@ -28,6 +28,7 @@
     "jwtSecretKey": "042e7d536354d3cdfab490925c55022efcb42bae",
     "useSass": false,
     "jhiPrefix": "jhi",
-    "messageBroker": false
+    "messageBroker": false,
+    "serviceDiscoveryType": false
   }
 }
