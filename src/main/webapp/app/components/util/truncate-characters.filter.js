@@ -4,7 +4,7 @@
     angular
         .module('jhipsterJwtSampleApplicationApp')
         .filter('characters', characters);
-        
+
     function characters () {
         return charactersFilter;
 
