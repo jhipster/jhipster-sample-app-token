@@ -23,7 +23,7 @@
       "en"
     ],
     "serverPort": 8080,
-    "jhipsterVersion": "4.8.2",
+    "jhipsterVersion": "4.9.0",
     "enableSocialSignIn": false,
     "jwtSecretKey": "042e7d536354d3cdfab490925c55022efcb42bae",
     "useSass": false,
